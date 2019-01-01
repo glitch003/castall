@@ -1,7 +1,7 @@
 import pychromecast
 
 print("Getting chromecasts")
-chromecasts = pychromecast.get_chromecasts()
+chromecasts = pychromecast.get_chromecasts(tries=1, retry_wait=1)
 # repub debate
 url = 'https://s3-us-west-1.amazonaws.com/chriscassano-dev/hendrix.mp4'
 
